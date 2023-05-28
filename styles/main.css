@@ -1,0 +1,125 @@
+:root {
+  /* colors  */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  --ff-kumbh: "Kumbh Sans", sans-serif;
+}
+
+body {
+  font-family: var(--ff-kumbh);
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.main-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-cyan);
+  position: relative;
+  overflow: hidden;
+}
+.bg-holder-one {
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 10%;
+  left: -50%;
+  transform: rotate(0deg);
+  height: 100%;
+  width: 100%;
+}
+.bg-holder-two {
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -10%;
+  right: -50%;
+  transform: rotate(180deg);
+  height: 100%;
+  width: 100%;
+}
+.container {
+  margin: 0 auto;
+  width: 375px;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  width: 100%;
+  z-index: 2;
+  padding: 0 1.5rem;
+}
+.profile-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+/* top section  */
+.top-img {
+  width: 100%;
+}
+/* profile content  */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.375rem;
+  position: relative;
+  padding-top: 4.5rem;
+  color: var(--very-dark-desaturated-blue);
+}
+.main-img {
+  border-radius: 50rem;
+  border: 4px solid white;
+  position: absolute;
+  top: -40%;
+}
+.profile-name {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0;
+}
+.age {
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+  padding-left: 0.25rem;
+}
+.location {
+  color: var(--dark-grayish-blue);
+}
+/* counter content */
+.counter-content {
+  display: flex;
+  flex-direction: row;
+  padding: 0 3rem 1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.count {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+}
+.count-type {
+  color: var(--dark-gray);
+  font-size: 0.675em;
+  letter-spacing: 0.1rem;
+}

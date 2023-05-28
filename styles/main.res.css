@@ -1,0 +1,13 @@
+@media (min-width: 576px) {
+  .card-container {
+    padding: 0 0.71rem;
+  }
+  .bg-holder-one {
+    top: -45%;
+    left: -10%;
+  }
+  .bg-holder-two {
+    top: 40%;
+    right: -15%;
+  }
+}
